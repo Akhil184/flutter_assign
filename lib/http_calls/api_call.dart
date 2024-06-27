@@ -2,8 +2,7 @@ import 'package:http/http.dart' as http;
 import 'package:crypto/crypto.dart';
 import 'dart:convert';
 class ApiService {
-  static const String baseUrl = 'https://your-api-url.com'; // Replace with your API base URL
-
+ 
   static Future<bool> loginUser(String email, String password) async {
     try {
       String apiUrl = 'https://apiv2stg.promilo.com/user/oauth/token'; // Example endpoint for login
